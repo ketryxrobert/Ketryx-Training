@@ -53,6 +53,18 @@ describe('Unit test for iOS Client @tests:KT-2', () => {
   })
 })
 
+describe('Unit test for Android Client @tests:KXITM7VNAYPPX2686NT493MKDMZRNWZ', () => {
+  it('renders the best heading', () => {
+    render(<Home />)
+
+    const heading = screen.getByRole("heading", {
+      name: /welcome to next\.js!/i,
+    });
+
+    expect(heading).toBeInTheDocument()
+  })
+})
+
 describe('Unit test for record keeping @tests:KT-98', () => {
   it('Verify create and archive record feature', () => {
     render(<Home />)
