@@ -90,7 +90,7 @@ describe('Unit test feedback forms @tests:KT-30', () => {
   })
 })
 
-describe('Unit test feedback forms @tests:KD-14', () => {
+describe('Unit test feedback forms @tests:KT-14', () => {
   it('Verify form submission', () => {
     render(<Home />)
 
@@ -102,7 +102,7 @@ describe('Unit test feedback forms @tests:KD-14', () => {
   })
 })
 
-describe('Unit test feedback forms @tests:KD-3', () => {
+describe('Unit test feedback forms @tests:KT-3', () => {
   it('Verify form submission', () => {
     render(<Home />)
 
