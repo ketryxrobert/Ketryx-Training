@@ -16,6 +16,18 @@ describe("Home", () => {
   });
 });
 
+describe('Test insulin delivery status UI on Android @tests:KT-66', () => {
+  it('Transition state and keep status', () => {
+    render(<Home />)
+
+    const heading = screen.getByRole("heading", {
+      name: /welcome to next\.js!/i,
+    });
+
+    expect(heading).toBeInTheDocument()
+  })
+})
+
 
 describe('Test insulin delivery status UI on iOS @tests:KT-68', () => {
   it('Transition state and keep status', () => {
