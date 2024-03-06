@@ -101,3 +101,15 @@ describe('Unit test feedback forms @tests:KD-14', () => {
     expect(heading).toBeInTheDocument()
   })
 })
+
+describe('Unit test feedback forms @tests:KD-3', () => {
+  it('Verify form submission', () => {
+    render(<Home />)
+
+    const heading = screen.getByRole("heading", {
+      name: /welcome to next\.js!/i,
+    });
+
+    expect(heading).toBeInTheDocument()
+  })
+})
